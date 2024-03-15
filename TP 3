@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int ContarVocalesA(string f);
+int main(){
+string frase;
+cout<<"ingrese frase"<<endl;
+getline(cin, frase);
+
+cout<<"la cantidad de letras A es: "<<ContarVocalesA(frase)<<endl;
+return 0;
+}
+int ContarVocalesA(string f){
+	int i;
+	int n=0;
+	for(i=0; i<f.size(); i++){
+		if(f[i]=='a'|| f[i]=='A'){
+			n++;
+		}
+	}
+	return n;
+}
